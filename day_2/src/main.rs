@@ -88,7 +88,7 @@ fn main() {
 
     println!("Real Input\nPart 1: {}", get_safe_report_sum(fs::read_to_string("src/input.txt").expect("Cant't read the input file"), false));
 
-    println!("Testing\nPart 1: {}", get_safe_report_sum(fs::read_to_string("src/test.txt").expect("Cant't read the test file"), true));
+    println!("Testing\nPart 2: {}", get_safe_report_sum(fs::read_to_string("src/test.txt").expect("Cant't read the test file"), true));
 
-    println!("Real Input\nPart 1: {}", get_safe_report_sum(fs::read_to_string("src/input.txt").expect("Cant't read the input file"), true));
+    println!("Real Input\nPart 2: {}", get_safe_report_sum(fs::read_to_string("src/input.txt").expect("Cant't read the input file"), true));
 }
