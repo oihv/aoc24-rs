@@ -141,7 +141,7 @@ fn process_part2(path: &str) -> u32 {
     let mut mas_map: Vec<(usize, usize)> = Vec::new();
 
     // Check diagonal (top left - bottom right)
-    for i in 1..height-3 {
+    for i in 1..height-2 {
         let mut diagonal_line = String::new();
         let mut inc = 0;
         while i+inc < height && inc < width {
@@ -153,7 +153,7 @@ fn process_part2(path: &str) -> u32 {
         }
         // dbg!(&diagonal_line);
     }
-    for i in 0..width-3 {
+    for i in 0..width-2 {
         let mut diagonal_line = String::new();
         let mut inc = 0;
         while i+inc < width && inc < height {
@@ -166,7 +166,7 @@ fn process_part2(path: &str) -> u32 {
         // dbg!(&diagonal_line);
     }
     // Check diagonal (top right - bottomm left)
-    for i in 3..height {
+    for i in 2..height {
         let mut diagonal_line = String::new();
         let mut inc = 0;
         // i >= inc so that the vector index will never be 0, and the calculation didn't result in
@@ -182,7 +182,7 @@ fn process_part2(path: &str) -> u32 {
         }
         // dbg!(&diagonal_line);
     }
-    for i in 1..width-3 {
+    for i in 1..width-2 {
         let mut diagonal_line = String::new();
         let mut inc = 0;
         while i+inc < width && inc <= height {
